@@ -8,7 +8,6 @@ const formattedDate = publishDate => {
   const stPattysDay = new Date(publishDate);
   return format(stPattysDay, 'dd.MM.yyyy, hh:mm', { locale: deLocale });
 }
-console.log(formattedDate('2020-12-07T10:26:00Z'));
 //exports.formattedDate = formattedDate;
 
 async function getNews(country) {
