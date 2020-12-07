@@ -10,7 +10,7 @@ layout: base.njk
 
 
 {% for item in news %}
-  <p><a href="/{{ item.country}}">{{ item.country}}</a></p>
+  <span class="countryCode"><a href="/{{ item.country}}">{{ item.country}}</a></span>
 {% endfor %}
 
 
