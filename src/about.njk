@@ -9,4 +9,8 @@ layout: base.njk
 </div>
 
 
+{% for item in news %}
+  <p><a href="/{{ item.country}}">{{ item.country}}</a></p>
+{% endfor %}
+
 
