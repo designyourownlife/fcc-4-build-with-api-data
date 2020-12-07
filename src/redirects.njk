@@ -5,7 +5,7 @@ permalink: _redirects
 /  /de/index.html  200 Language=de
 
 {% for item in news %}
-/  {{item.country}}/index.html  200 Country={{item.country}}
+/  /{{item.country}}/index.html  200 Country={{item.country}}
 {% endfor %}
 
 /  /gb/index.html  404
