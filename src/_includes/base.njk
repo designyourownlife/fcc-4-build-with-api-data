@@ -6,10 +6,16 @@
   <title>{{ title }}</title>
   <style>
     body {
+      text-align:left;
+    }
+    header {
       text-align:center;
     }
+    .weather {
+      font-size:2rem;
+    }
     div.container {
-      width:400px;
+      width:480px;
       margin: 0 auto;
     }
     .love {
@@ -20,7 +26,27 @@
       background-color: yellow;
       margin: 1px;
     }
+    .hidden {
+      display: none;
+    }
+    .animate {
+      opacity:1!important;
+      height:auto!important;
+    }
+    .showElem {
+      display: inline-block;
+    }
+    .weatherData {
+      opacity:0;
+      height:0;
+      -webkit-transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -ms-transition: opacity 1s ease-in-out;
+      -o-transition: opacity 1s ease-in-out;
+      transition: opacity 1s ease-in-out;
+    }
   </style>
+  <link rel="stylesheet" href="/css/loading.css">	
 </head>
 <body>
   <header>
