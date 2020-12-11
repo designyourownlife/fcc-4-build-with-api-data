@@ -6,11 +6,11 @@ layout: base.njk
 <div class="container">
   <h1>This page is really for you!</h1>
   <p>It was made for you using HTML, CSS and JavaScript. And served as a JAMStack site.</p>
+  <p>
+    {% for item in news %}
+    <span class="countryCode"><a href="/{{ item.country}}">{{ item.country}}</a></span>
+    {% endfor %}
+  </p>
 </div>
-
-
-{% for item in news %}
-  <span class="countryCode"><a href="/{{ item.country}}">{{ item.country}}</a></span>
-{% endfor %}
 
 
